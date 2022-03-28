@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>day3 post test</title>
+</head>
+<body>
+	<h3>form의 post 테스트</h3>
+	<hr>
+	<form action="request_test.jsp" method="post"><!--method는 form의 입력값을 전달하는 방식을 결정  
+					form태그에서 method설정 없으면 기본이 "get" : 쿼리 스트링으로 입력값 전달(데이터 조회할때 전달)
+								사용자 요청의 url 인코딩 기본이 utf-8
+					method "post"로 하면 form data로 입력값 전달(데이터 저장)
+								이때 form data 인코딩은 직접 설정이 필요합니다.	
+								
+								day2의 memberReg.html의 method는 'post'로 합니다
+								-->
+	<!-- request_test.jsp 파일은 dqt2폴더 파일과 내용이 동일. 차이점 확인 -->
+	<input name="data1" placeholder="첫번째 데이터 입력하세요"> <br>
+	<input name="data2" placeholder="두번째 데이터 입력하세요"> <br>
+	<button>전송</button>
+	<button type="reset">다시쓰기</button>
+	
+	</form>
+</body>
+</html>
